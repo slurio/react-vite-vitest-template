@@ -17,10 +17,7 @@ export default defineConfig([
   { ignores: ['dist', 'node_modules'] },
 
   // Convert legacy React presets to flat config
-  ...compat.extends(
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended'
-  ),
+  ...compat.extends('plugin:react/recommended', 'plugin:react-hooks/recommended'),
 
   {
     files: ['**/*.{ts,tsx}'],
@@ -42,10 +39,7 @@ export default defineConfig([
     },
 
     // TS core recommendations (flat)
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
 
     settings: { react: { version: 'detect' } },
 
