@@ -1,6 +1,18 @@
 # React + Vite + TypeScript + Vitest Template
 
-A minimal, modern starter template for React projects, preconfigured with:
+A clean, minimal React starter using Vite and TypeScript, preconfigured with:
 
-> 🚧 README is a work in progress — updating soon!
+- React 19 + Vite
+- TypeScript
+- ESLint + Prettier
+- Vitest
+- React Testing Library
+- jest-dom matchers
+- Example component and test
 
+## Quick Start
+
+```bash
+yarn        # install dependencies
+yarn dev    # start the dev server
+yarn test   # run tests
